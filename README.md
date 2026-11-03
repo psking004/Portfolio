@@ -2,7 +2,7 @@
 
 Static portfolio site: plain HTML and CSS, no build step, no third-party scripts.
 
-Files: index.html, style.css, assets/hero.png
+Files: index.html, style.css, 404.html, favicon.svg, assets/hero.jpg
 
 Run locally: open index.html in a browser.
 

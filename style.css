@@ -7,7 +7,7 @@ nav{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;
 nav .brand{color:var(--text);font-weight:700}
 nav div a{margin-left:22px;color:var(--muted);font-size:.95rem}
 nav div a:hover{color:var(--text)}
-.hero{min-height:78vh;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(11,15,23,.92) 0%,rgba(11,15,23,.55) 55%,rgba(11,15,23,.2) 100%),url(assets/hero.png) center/cover no-repeat}
+.hero{min-height:78vh;display:flex;align-items:flex-end;background:linear-gradient(90deg,rgba(11,15,23,.92) 0%,rgba(11,15,23,.55) 55%,rgba(11,15,23,.2) 100%),url(assets/hero.jpg) center/cover no-repeat}
 .hero-inner{padding:0 6vw 10vh;max-width:760px}
 .eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.15em;font-size:.8rem;margin-bottom:10px}
 h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.1;margin-bottom:16px}
@@ -37,3 +37,19 @@ h2{font-size:1.8rem;margin-bottom:24px}
 #contact p{color:var(--muted);margin-bottom:18px}
 footer{text-align:center;color:var(--muted);padding:32px;font-size:.9rem}
 @media(max-width:640px){nav div{display:none}.timeline li{flex-direction:column;gap:2px}}
+html,body{overflow-x:hidden;max-width:100%}
+img{max-width:100%;height:auto}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent);margin-left:8px}
+.contact-links{display:flex;flex-wrap:wrap;gap:10px}.contact-links .btn.ghost{margin-left:0}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--text);font-size:1.3rem;padding:4px 10px;border-radius:6px;cursor:pointer}
+.card,.skill{min-width:0;overflow-wrap:anywhere}
+@media(max-width:640px){
+.menu-btn{display:block}
+nav div{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 6vw}
+nav div.open{display:flex}
+nav div a{margin:0;padding:12px 0}
+.grid{grid-template-columns:1fr}
+.hero{min-height:70vh}
+.hero-inner .btn{margin-top:8px}
+.btn.ghost{margin-left:0}
+}
